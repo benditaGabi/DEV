@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+  padding:8;
+  margin:0;  
+}
+
+
+/*.logo{
+  position: absolute;
+width: 20x;
+height: 5px;
+left: 50px;
+top: 50px;
+
+}*/
+
+/*não utilizei boostrap, estou fazendo próprio boot css*/
+.center{
+  max-width: 960px;
+  margin:0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main{
+  padding:40px 0;
+  width: 100%;
+  background-color:red;
+  background-image: url(https://assets-global.website-files.com/5e3432bccb627f3b9e392438/5e3432bccb627f60023926f8_wave-bottom-haze.svg);
+  background-position:center;
+  background-size: cover;
+  min-height: 300px;/*adicionei o min hight e não só hight porque quero que comece com 400 pixels mas se o conteúdo passar de 400 a tela continua crescendo */
+
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.menu h3{
+  color: white;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.form{
+  /*background-color:rgb(158, 0, 0);*/
+
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin:40px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form h2{
+  color:white;
+  text-transform:uppercase;
+  font-weight: normal;
+  font-size: 28px;
+
+}
+
+.form input[type=text]{
+  width: 30%;
+  justify-content: space-between;
+  height:30px;
+  margin:8px 10px;
+}
+
+.items-form{
+margin:0 auto;
+max-width: 540px;
+display: flex;
+width: 100%;
+justify-content: space-around;
+
+flex-wrap: wrap;
+}
+
+.items-form input[type=text]{
+width: 48%;
+height: 30px;
+margin: 8px 0px;
+padding-left:10px;
+}
+
+
+.botao input[type=submit]{
+  width: 100%;
+  height: 40px;
+  background-color: green;
+  cursor: pointer;
+  color:white;
+  border:0;
+  font-size: 19px;
+}
+
+
+
+.conteudo-single{
+  margin-top: 40px;
+  width: 50%;
+  padding:8px 30 px;
+
+}
+
+@media screen (max-widht:768px){
+  .items-form input[type=text]{
+    width:100%;
+  }
+}
